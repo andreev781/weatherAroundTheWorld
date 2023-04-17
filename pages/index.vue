@@ -15,10 +15,11 @@ export default {
     let city = location.data.city
     let weatherData = false
     if(route.query.city) city = route.query.city
-    
+    console.log(route);
     await $axios.get(`https://api.weatherapi.com/v1/forecast.json?key=cf424b291f6e48d5ac9182353220103&q=${city}&days=3`)
       .then(res => weatherData = res.data)
       .catch(async function() {
+        route.query.city = ''
         city = location.data.city
         await $axios.get(`https://api.weatherapi.com/v1/forecast.json?key=cf424b291f6e48d5ac9182353220103&q=${city}&days=3`)
           .then(res => weatherData = res.data)

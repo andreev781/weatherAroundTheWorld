@@ -52,7 +52,10 @@ export default {
         },
     },
     created(){
-      if (this.$route.query.city) this.isOpen = false
+        console.log(`created: ${this.$route}`);
+    if (this.$route.query.city)  {
+        this.isOpen = false
+      }
       else this.isOpen = true  
     },
     watch: {
