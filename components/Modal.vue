@@ -52,7 +52,7 @@ export default {
         },
     },
     created(){
-        console.log(`created: ${this.$route}`);
+        console.log(`created: ${this.$route.query}`);
     if (this.$route.query.city)  {
         this.isOpen = false
       }
