@@ -1,0 +1,11 @@
+{
+  "Forecast": {
+    "description": "Auto imported from components/Forecast.vue"
+  },
+  "Main": {
+    "description": "Auto imported from components/Main.vue"
+  },
+  "Modal": {
+    "description": "Auto imported from components/Modal.vue"
+  }
+}
