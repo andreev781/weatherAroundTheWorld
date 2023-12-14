@@ -2,7 +2,6 @@
   <div class="container">
     <Main :location="weatherData.location" :currentWeather="weatherData.current" />
     <Forecast :forecast="weatherData.forecast.forecastday"/>
-    <Modal :city="weatherData.location.region" />
   </div>
 </template>
 
